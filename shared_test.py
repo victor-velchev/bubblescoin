@@ -3,8 +3,13 @@ from shared import Shared
 
 class TestShared(unittest.TestCase):
     def setUp(self):
+        #self.whatever
         pass
-    
+
+    def tearDown(self):
+         #self.whatever.dispose()
+         pass
+
     def test_encoding(self):
         self.assertTrue(isinstance(Shared.Encoding(), str))
         self.assertEqual(Shared.Encoding(), "utf8")
